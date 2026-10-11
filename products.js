@@ -156,7 +156,10 @@
     if (!root) return;
     const products = getProducts().filter((p) => p.featured);
     const track = root.querySelector("[data-marquee-track]");
-    const cta = root.querySelector("[data-products-cta]");
+    const section = root.closest("section") || root.parentElement;
+    const cta = section
+      ? section.querySelector("[data-products-cta]")
+      : null;
     const ui = getConfig().ui || {};
 
     if (cta) {
