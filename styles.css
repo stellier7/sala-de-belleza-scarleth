@@ -130,7 +130,6 @@ nav {
   max-width: 100%;
   transition: background .5s var(--ease), padding .4s var(--ease), box-shadow .4s var(--ease), backdrop-filter .4s var(--ease);
 }
-.nav-brand { margin-right: auto; }
 .nav.scrolled {
   background: rgba(242,242,240,0.92);
   backdrop-filter: blur(16px) saturate(120%);
@@ -147,6 +146,7 @@ nav {
   font-size: 19px;
   letter-spacing: 0.01em;
   min-width: 0;
+  margin-right: auto;
 }
 .nav-logo {
   height: 44px;
