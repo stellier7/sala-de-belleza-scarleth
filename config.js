@@ -10,11 +10,11 @@ const CONFIG = {
   brandName: "Scarleth",
   brandSubtitle: "Sala de Belleza",
   brandNameShort: "Scarleth",
-  tagline: "Cabello y uñas",
+  tagline: "Belleza completa",
   heroEyebrow: "Comayagua",
   heroHeadlineLines: ["Tu momento", "de brillar"],
   heroSub:
-    "Cabello y uñas con atención cercana en dos sucursales. Reserva por WhatsApp y elige Scarleth #1 o Scarleth #2.",
+    "Cabello, uñas, cejas y más — con atención cercana en dos sucursales. Reserva por WhatsApp y elige Scarleth #1 o Scarleth #2.",
 
   // ---- Contacto / Reservas (2 sucursales) ----
   whatsappDefaultMessage: "¡Hola! Me gustaría reservar una cita en Scarleth.",
@@ -71,11 +71,14 @@ const CONFIG = {
       description:
         "Cortes, color, alisados y peinados con productos profesionales para un resultado que se nota.",
       items: [
-        "Corte y peinado",
+        "Corte de damas y caballeros",
+        "Lavado y peinado / blowout",
         "Color, mechas y balayage",
         "Nanoplastia y alisados",
-        "Tratamientos de hidratación y reparación",
-        "Peinados para eventos",
+        "Keratina y tratamientos de brillo",
+        "Hidratación y reparación profunda",
+        "Peinados para bodas y eventos",
+        "Retoque de raíces",
       ],
     },
     {
@@ -84,11 +87,67 @@ const CONFIG = {
       description:
         "Manicura y pedicura con acabado limpio, duradero y cuidado en cada detalle.",
       items: [
-        "Manicura tradicional y gel",
+        "Manicura tradicional",
+        "Manicura en gel / semipermanente",
         "Pedicura spa",
         "Uñas acrílicas y soft gel",
+        "Polygel y builder gel",
         "Nail art sencillo",
-        "Retoque y mantenimiento",
+        "Retiro y mantenimiento",
+        "Tratamiento para cutículas",
+      ],
+    },
+    {
+      label: "Cejas & Pestañas",
+      name: "Mirada Definida",
+      description:
+        "Diseño de cejas y pestañas para enmarcar tu rostro con un acabado natural o más marcado.",
+      items: [
+        "Diseño y depilación de cejas",
+        "Tinte de cejas",
+        "Laminado de cejas",
+        "Tinte de pestañas",
+        "Lifting de pestañas",
+        "Extensiones de pestañas (clásicas)",
+      ],
+    },
+    {
+      label: "Maquillaje",
+      name: "Maquillaje Profesional",
+      description:
+        "Looks para el día a día, eventos y ocasiones especiales, con productos de larga duración.",
+      items: [
+        "Maquillaje social / de día",
+        "Maquillaje para eventos",
+        "Maquillaje de novia",
+        "Maquillaje de graduación",
+        "Prueba de maquillaje",
+      ],
+    },
+    {
+      label: "Piel",
+      name: "Cuidado de la Piel",
+      description:
+        "Limpiezas y tratamientos faciales para dejar la piel fresca, suave y radiante.",
+      items: [
+        "Limpieza facial básica",
+        "Limpieza facial profunda",
+        "Facial hidratante",
+        "Exfoliación y mascarilla",
+        "Depilación facial (cejas, labio, mentón)",
+      ],
+    },
+    {
+      label: "Paquetes",
+      name: "Combos & Eventos",
+      description:
+        "Combina servicios para salir lista — ideal para citas, fiestas y preparación de eventos.",
+      items: [
+        "Corte + peinado",
+        "Manicura + pedicura",
+        "Cejas + pestañas",
+        "Peinado + maquillaje",
+        "Prep para novias y quinceañeras",
       ],
     },
   ],
@@ -162,7 +221,7 @@ const CONFIG = {
   // ---- Textos de interfaz ----
   ui: {
     metaDescription:
-      "Scarleth — Sala de Belleza en Comayagua. Cabello y uñas en Scarleth #1 y Scarleth #2. Reserva por WhatsApp.",
+      "Scarleth — Sala de Belleza en Comayagua. Cabello, uñas, cejas, maquillaje y más en Scarleth #1 y Scarleth #2. Reserva por WhatsApp.",
     navServices: "Servicios",
     navExperience: "Cuidado",
     navGallery: "Galería",
@@ -174,7 +233,7 @@ const CONFIG = {
     heroSecondary: "Ver servicios",
     heroScroll: "Desliza",
     servicesEyebrow: "Lo Que Hacemos",
-    servicesTitle: "Cabello y uñas, con el mismo cuidado.",
+    servicesTitle: "Todo lo que necesitas, en un solo salón.",
     ritualEyebrow: "Cuidado Profesional",
     ritualTitle: "Cuatro pasos para un cabello sano.",
     galleryEyebrow: "Nuestro Trabajo",
