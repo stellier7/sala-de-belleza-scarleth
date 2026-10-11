@@ -18,6 +18,8 @@ const CONFIG = {
 
   // ---- Contacto / Reservas (2 sucursales) ----
   whatsappDefaultMessage: "¡Hola! Me gustaría reservar una cita en Scarleth.",
+  // Número principal para consultas de productos (Scarleth #1)
+  whatsappNumber: "50498386397",
   locations: [
     {
       id: "scarleth-1",
@@ -159,6 +161,234 @@ const CONFIG = {
   heroImage: "images/hero.jpg",
   visitImage: "images/visit.jpg",
 
+  // ---- Categorías de productos (orden del filtro) ----
+  productCategories: [
+    "Champús",
+    "Acondicionadores",
+    "Tratamientos",
+    "Color",
+    "Styling",
+  ],
+
+  // ---- Productos (extraídos de fotos de Facebook) ----
+  products: [
+    // photo-01 — Maxybelt Tono a Tono (4)
+    {
+      id: "maxybelt-tono-cobre",
+      name: "Shampoo Tono a Tono Cobre Maxybelt",
+      category: "Color",
+      image: "images/products/photo-01-maxybelt-tono.jpg",
+      crop: { x: 0, y: 0, w: 50, h: 50 },
+      featured: true,
+      price: null,
+    },
+    {
+      id: "maxybelt-tono-negro-noche",
+      name: "Shampoo Tono a Tono Negro Noche Maxybelt",
+      category: "Color",
+      image: "images/products/photo-01-maxybelt-tono.jpg",
+      crop: { x: 50, y: 0, w: 50, h: 50 },
+      featured: false,
+      price: null,
+    },
+    {
+      id: "maxybelt-tono-beige-almendra",
+      name: "Shampoo Tono a Tono Beige Almendra Maxybelt",
+      category: "Color",
+      image: "images/products/photo-01-maxybelt-tono.jpg",
+      crop: { x: 0, y: 50, w: 50, h: 50 },
+      featured: false,
+      price: null,
+    },
+    {
+      id: "maxybelt-tono-chocolate-carioca",
+      name: "Tratamiento Tono a Tono Chocolate Carioca Maxybelt",
+      category: "Color",
+      image: "images/products/photo-01-maxybelt-tono.jpg",
+      crop: { x: 50, y: 50, w: 50, h: 50 },
+      featured: false,
+      price: null,
+    },
+
+    // photo-02 — Wella Ultimate Repair (4)
+    {
+      id: "wella-ultimate-repair-shampoo",
+      name: "Champú Wella Ultimate Repair (Paso 1)",
+      category: "Champús",
+      image: "images/products/photo-02-wella-ultimate-repair.jpg",
+      crop: { x: 16, y: 48, w: 19, h: 40 },
+      featured: true,
+      price: null,
+    },
+    {
+      id: "wella-ultimate-repair-mask",
+      name: "Mascarilla Wella Ultimate Repair",
+      category: "Tratamientos",
+      image: "images/products/photo-02-wella-ultimate-repair.jpg",
+      crop: { x: 31, y: 71, w: 28, h: 20 },
+      featured: false,
+      price: null,
+    },
+    {
+      id: "wella-ultimate-repair-miracle-rescue",
+      name: "Tratamiento Wella Miracle Hair Rescue (Paso 3)",
+      category: "Tratamientos",
+      image: "images/products/photo-02-wella-ultimate-repair.jpg",
+      crop: { x: 63, y: 60, w: 12, h: 32 },
+      featured: false,
+      price: null,
+    },
+    {
+      id: "wella-ultimate-repair-protective-leave-in",
+      name: "Protector sin Aclarado Wella Ultimate Repair (Paso 4)",
+      category: "Tratamientos",
+      image: "images/products/photo-02-wella-ultimate-repair.jpg",
+      crop: { x: 75, y: 39, w: 16, h: 52 },
+      featured: true,
+      price: null,
+    },
+
+    // photo-03 — Wella Fusion (3)
+    {
+      id: "wella-fusion-shampoo",
+      name: "Champú Wella Fusion Intense Repair",
+      category: "Champús",
+      image: "images/products/photo-03-wella-fusion.jpg",
+      crop: { x: 34, y: 28, w: 16, h: 59 },
+      featured: true,
+      price: null,
+    },
+    {
+      id: "wella-fusion-conditioner",
+      name: "Acondicionador Wella Fusion Intense Repair",
+      category: "Acondicionadores",
+      image: "images/products/photo-03-wella-fusion.jpg",
+      crop: { x: 62, y: 30, w: 26, h: 56 },
+      featured: false,
+      price: null,
+    },
+    {
+      id: "wella-fusion-mask",
+      name: "Mascarilla Wella Fusion Intense Repair",
+      category: "Tratamientos",
+      image: "images/products/photo-03-wella-fusion.jpg",
+      crop: { x: 47, y: 70, w: 26, h: 23 },
+      featured: true,
+      price: null,
+    },
+
+    // photo-04 — Wella Color Motion+ (3)
+    {
+      id: "wella-color-motion-shampoo",
+      name: "Champú Wella Color Motion+",
+      category: "Champús",
+      image: "images/products/photo-04-wella-color-motion.jpg",
+      crop: { x: 17, y: 28, w: 16, h: 58 },
+      featured: true,
+      price: null,
+    },
+    {
+      id: "wella-color-motion-conditioner",
+      name: "Acondicionador Wella Color Motion+",
+      category: "Acondicionadores",
+      image: "images/products/photo-04-wella-color-motion.jpg",
+      crop: { x: 34, y: 31, w: 21, h: 50 },
+      featured: false,
+      price: null,
+    },
+    {
+      id: "wella-color-motion-mask",
+      name: "Mascarilla Structure+ Wella Color Motion+",
+      category: "Tratamientos",
+      image: "images/products/photo-04-wella-color-motion.jpg",
+      crop: { x: 52, y: 62, w: 24, h: 20 },
+      featured: false,
+      price: null,
+    },
+
+    // photo-05 — Wella EIMI Thermal Image (1)
+    {
+      id: "wella-eimi-thermal-image",
+      name: "Spray Termoprotector Wella EIMI Thermal Image",
+      category: "Styling",
+      image: "images/products/photo-05-wella-eimi-thermal.jpg",
+      crop: null,
+      featured: true,
+      price: null,
+    },
+
+    // photo-06 — Firenze Professional (2)
+    {
+      id: "firenze-keratin-antifrizz-serum",
+      name: "Serum Keratin Antifrizz Firenze Professional",
+      category: "Tratamientos",
+      image: "images/products/photo-06-firenze-keratin.jpg",
+      crop: { x: 38, y: 13, w: 30, h: 72 },
+      featured: true,
+      price: null,
+    },
+    {
+      id: "firenze-keratin-leave-in-ampoules",
+      name: "Ampollas Keratin Leave-In Firenze",
+      category: "Tratamientos",
+      image: "images/products/photo-06-firenze-keratin.jpg",
+      crop: { x: 65, y: 64, w: 22, h: 28 },
+      featured: false,
+      price: null,
+    },
+
+    // photo-07 — Olaplex Nº.8 (1)
+    {
+      id: "olaplex-no8-moisture-mask",
+      name: "Mascarilla Olaplex Nº.8 Bond Intense Moisture",
+      category: "Tratamientos",
+      image: "images/products/photo-07-olaplex-no8.jpg",
+      crop: null,
+      featured: true,
+      price: null,
+    },
+
+    // photo-08 — TRUSS Miracle Summer (3)
+    {
+      id: "truss-miracle-summer-shampoo",
+      name: "Champú Truss Miracle Summer",
+      category: "Champús",
+      image: "images/products/photo-08-truss-miracle-summer.jpg",
+      crop: { x: 0, y: 0, w: 48, h: 95 },
+      featured: false,
+      price: null,
+    },
+    {
+      id: "truss-miracle-summer-conditioner",
+      name: "Acondicionador Truss Miracle Summer",
+      category: "Acondicionadores",
+      image: "images/products/photo-08-truss-miracle-summer.jpg",
+      crop: { x: 45, y: 0, w: 25, h: 95 },
+      featured: false,
+      price: null,
+    },
+    {
+      id: "truss-miracle-summer-mask",
+      name: "Mascarilla Truss Miracle Summer",
+      category: "Tratamientos",
+      image: "images/products/photo-08-truss-miracle-summer.jpg",
+      crop: { x: 68, y: 60, w: 32, h: 40 },
+      featured: false,
+      price: null,
+    },
+
+    // photo-09 — Luseta Curl Cream (1)
+    {
+      id: "luseta-crema-rizos",
+      name: "Crema para rizos Luseta",
+      category: "Styling",
+      image: "images/products/photo-09-luseta-curl-cream.jpg",
+      crop: null,
+      featured: true,
+      price: null,
+    },
+  ],
+
   // ---- Textos de interfaz ----
   ui: {
     metaDescription:
@@ -167,7 +397,21 @@ const CONFIG = {
     navExperience: "Cuidado",
     navGallery: "Galería",
     navVisit: "Visítanos",
+    navProducts: "Productos",
     navBook: "Reservar",
+    productsEyebrow: "Tienda",
+    productsTitle: "Productos destacados",
+    productsSubtitle: "Cuidado profesional para llevar a casa.",
+    productsViewAll: "Ver todos los productos",
+    catalogTitle: "Catálogo",
+    catalogSubtitle: "Productos profesionales disponibles en el salón. Pregunta por disponibilidad.",
+    catalogSearchPlaceholder: "Buscar producto…",
+    catalogFilterAll: "Todos",
+    catalogEmpty: "No encontramos productos con ese filtro.",
+    catalogBack: "Volver al inicio",
+    catalogWhatsApp: "Consultar por WhatsApp",
+    catalogClose: "Cerrar",
+    productPriceLabel: "Precio",
     openMenu: "Abrir menú",
     closeMenu: "Cerrar menú",
     heroCta: "Reservar por WhatsApp",
