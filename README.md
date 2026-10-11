@@ -1,6 +1,6 @@
-# Sala de Belleza Scarleth
+# Scarleth — Sala de Belleza
 
-Sitio web basado en [luxury-salon-template](https://github.com/stellier7/luxury-salon-template). Todo el contenido del cliente se edita en `config.js`.
+Sitio web de Scarleth (Comayagua), basado en [luxury-salon-template](https://github.com/stellier7/luxury-salon-template).
 
 ## Quick start
 
@@ -8,23 +8,21 @@ Open `index.html` in any browser — no build step required.
 
 ## Customize
 
-Edit **`config.js` only** for a typical re-skin:
+Edit **`config.js`** for content. Images live in `images/`.
 
-| Section | What to change |
-|---------|----------------|
-| Brand | Name, tagline, hero copy |
-| Contact | WhatsApp, phone, address, hours, Instagram |
-| Colors | Hex values in `colors` |
-| Services | Service cards with menu items |
-| Ritual | Experience strip (4 steps) |
-| Gallery | Image URLs |
-| Atmosphere | Hero photo and visit photo |
-| Testimonials | Client quotes |
+| Section | Notes |
+|---------|--------|
+| Brand | Scarleth + “Sala de Belleza” |
+| Locations | Scarleth #1 and Scarleth #2 (WhatsApp picker) |
+| Products | “Cuidado profesional” carousel (4 steps) |
+| Gallery | 8 photos |
+| Colors | Cream / black from logo |
 
 ## Structure
 
 ```
-├── index.html   # Page shell + render logic
-├── styles.css   # Typography, layout, animations
-└── config.js    # All client-specific content
+├── index.html
+├── styles.css
+├── config.js
+└── images/
 ```

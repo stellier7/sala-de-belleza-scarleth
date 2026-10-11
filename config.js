@@ -1,49 +1,66 @@
 // ============================================================
-// MAISON VELA — Plantilla para Salón / Spa de Uñas / Spa
-// Edita todo en este archivo para adaptar el sitio a un nuevo
-// cliente. Para un re-skin normal, no debería hacer falta
-// cambiar nada fuera de este archivo.
+// SCARLETH — Sala de Belleza
+// Contenido del cliente. Edita este archivo para re-skinear.
 // ============================================================
 
 const CONFIG = {
   lang: "es",
 
   // ---- Marca ----
-  brandName: "MAISON VELA",
-  brandNameShort: "VELA",
-  tagline: "Cabello. Uñas. Piel.",
-  heroEyebrow: "Una Casa de Belleza Privada",
-  heroHeadlineLines: ["El Ritual", "de Ser Vista"],
+  brandName: "Scarleth",
+  brandSubtitle: "Sala de Belleza",
+  brandNameShort: "Scarleth",
+  tagline: "Cabello y uñas",
+  heroEyebrow: "Comayagua",
+  heroHeadlineLines: ["Tu momento", "de brillar"],
   heroSub:
-    "Donde cada cita es una ocasión. Cabello, uñas y piel — atendidos con el cuidado que se nota.",
+    "Cabello y uñas con atención cercana en dos sucursales. Reserva por WhatsApp y elige Scarleth #1 o Scarleth #2.",
 
-  // ---- Contacto / Reservas ----
-  whatsappNumber: "50499999999", // código de país + número, sin + ni espacios
-  whatsappDefaultMessage: "¡Hola! Me gustaría reservar una cita en MAISON VELA.",
-  phoneDisplay: "+504 9999-9999",
-  address: "Blvd. Morazán, Torre Sky, Local 4 — Tegucigalpa",
-  hours: [
-    { day: "Mar — Vie", time: "10:00 AM – 7:00 PM" },
-    { day: "Sábado", time: "9:00 AM – 6:00 PM" },
-    { day: "Dom — Lun", time: "Cerrado" },
+  // ---- Contacto / Reservas (2 sucursales) ----
+  whatsappDefaultMessage: "¡Hola! Me gustaría reservar una cita en Scarleth.",
+  locations: [
+    {
+      id: "scarleth-1",
+      name: "Scarleth #1",
+      address: "Avenida 2 NE, Comayagua",
+      phoneDisplay: "+504 9838-6397",
+      whatsappNumber: "50498386397",
+      mapsUrl: "https://maps.app.goo.gl/DjYNgpmWiXEizpyY6",
+    },
+    {
+      id: "scarleth-2",
+      name: "Scarleth #2",
+      address: "Cerca de Inversiones American Fashion, Comayagua",
+      phoneDisplay: "+504 9875-0500",
+      whatsappNumber: "50498750500",
+      mapsUrl:
+        "https://www.google.com/maps/place/F948%2BJCV+Inversiones+American+Fashion,+Comayagua/@14.456672,-87.6343313,20z",
+    },
   ],
-  instagramHandle: "@maisonvela",
-  instagramUrl: "https://instagram.com",
+  hours: [
+    { day: "Lun — Sáb", time: "8:00 AM – 7:00 PM" },
+    { day: "Domingo", time: "8:00 AM – 1:00 PM" },
+  ],
+  instagramHandle: "@scarlethsalon_",
+  instagramUrl: "https://www.instagram.com/scarlethsalon_/",
+  facebookUrl: "https://www.facebook.com/p/Sala-de-Belleza-Scarleth-100063622987668/",
+  tiktokHandle: "@scarlethsalon_",
+  tiktokUrl: "https://www.tiktok.com/@scarlethsalon_",
 
-  // ---- Colores (estudio monocromo — edita solo los valores) ----
+  // ---- Colores (logo: cream + negro) ----
   colors: {
-    cream: "#000000",
-    cream2: "#0A0A0A",
-    ink: "#FFFFFF",
-    inkSoft: "#A8A8A8",
-    inkFaint: "#666666",
-    accent: "#FFFFFF",
-    accentInv: "#000000",
-    accentHover: "rgba(255,255,255,0.10)",
-    gray: "#1A1A1A",
-    grayLight: "#111111",
-    line: "rgba(255,255,255,0.14)",
-    lineStrong: "rgba(255,255,255,0.28)",
+    cream: "#F2F2F0",
+    cream2: "#EAEAE6",
+    ink: "#000000",
+    inkSoft: "#4A4A4A",
+    inkFaint: "#7A7A7A",
+    accent: "#000000",
+    accentInv: "#F2F2F0",
+    accentHover: "rgba(0,0,0,0.06)",
+    gray: "#E8E8E4",
+    grayLight: "#F7F7F5",
+    line: "rgba(0,0,0,0.12)",
+    lineStrong: "rgba(0,0,0,0.22)",
   },
 
   // ---- Servicios ----
@@ -52,81 +69,102 @@ const CONFIG = {
       label: "Cabello",
       name: "Estudio de Cabello",
       description:
-        "Corte, color y acabado con estilistas formadas en las técnicas más actuales de Miami y Europa.",
-      items: ["Corte y peinado signature", "Balayage y corrección de color", "Barra de blowout", "Peinado para bodas y eventos"],
+        "Cortes, color, alisados y peinados con productos profesionales para un resultado que se nota.",
+      items: [
+        "Corte y peinado",
+        "Color, mechas y balayage",
+        "Nanoplastia y alisados",
+        "Tratamientos de hidratación y reparación",
+        "Peinados para eventos",
+      ],
     },
     {
       label: "Uñas",
-      name: "Atelier de Uñas",
+      name: "Uñas & Manicura",
       description:
-        "Detalle pintado a mano, acabados de larga duración y un estándar de sanitización que no negociamos.",
-      items: ["Gel-X y builder gel", "Manicura rusa", "Nail art pintado a mano", "Ritual de pedicura spa"],
-    },
-    {
-      label: "Piel",
-      name: "Piel & Spa",
-      description:
-        "Faciales y tratamientos corporales diseñados para tu piel, no un menú genérico.",
-      items: ["Facial signature", "Dermaplaning", "Masaje con piedras calientes", "Envoltura corporal reductora"],
+        "Manicura y pedicura con acabado limpio, duradero y cuidado en cada detalle.",
+      items: [
+        "Manicura tradicional y gel",
+        "Pedicura spa",
+        "Uñas acrílicas y soft gel",
+        "Nail art sencillo",
+        "Retoque y mantenimiento",
+      ],
     },
   ],
 
-  // ---- Franja ritual (sección de scroll signature) ----
+  // ---- Cuidado profesional (antes: ritual) ----
   ritualSteps: [
     {
       time: "01",
-      title: "Llegar",
-      text: "Champagne, toallas tibias y una consulta con tu estilista antes de tocar una sola herramienta.",
-      img: "https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=1200&auto=format&fit=crop",
+      title: "Hidratar",
+      text: "Nutrición profunda para devolver suavidad, brillo y movimiento al cabello reseco.",
+      img: "images/product-01-hidratar.jpg",
     },
     {
       time: "02",
-      title: "Atender",
-      text: "Atención plena, una clienta a la vez — sin sillas doble-reservadas ni acabados apresurados.",
-      img: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=1200&auto=format&fit=crop",
+      title: "Reparar",
+      text: "Protocolos de reparación que fortalecen la fibra y recuperan el cabello maltratado.",
+      img: "images/product-02-reparar.jpg",
     },
     {
       time: "03",
-      title: "Finalizar",
-      text: "Cada servicio termina igual: revisión en el espejo y tiempo para disfrutar de verdad el resultado.",
-      img: "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?q=80&w=1200&auto=format&fit=crop",
+      title: "Fortalecer",
+      text: "Máscaras y tratamientos intensivos para cabello más resistente día a día.",
+      img: "images/product-03-fortalecer.jpg",
     },
     {
       time: "04",
-      title: "Salir Radiante",
-      text: "Reagendamos a tu salida — confirmación por WhatsApp antes de que llegues a la puerta.",
-      img: "https://images.unsplash.com/photo-1519415510236-718bdfcd89c8?q=80&w=1200&auto=format&fit=crop",
+      title: "Proteger el color",
+      text: "Cuidado pensado para fijar el tono, sumar brillo y alargar tu coloración.",
+      img: "images/product-04-color.jpg",
     },
   ],
 
-  // ---- Galería ----
+  // ---- Galería (8) ----
   gallery: [
-    "https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?q=80&w=900&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1600948836101-f9ffda59d250?q=80&w=900&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6?q=80&w=900&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1562322140-8baeececf3df?q=80&w=900&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1470259078422-826894b933aa?q=80&w=900&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?q=80&w=900&auto=format&fit=crop",
+    "images/gallery-01.jpg",
+    "images/gallery-02.jpg",
+    "images/gallery-03.jpg",
+    "images/gallery-04.jpg",
+    "images/gallery-05.jpg",
+    "images/gallery-06.jpg",
+    "images/gallery-07.jpg",
+    "images/gallery-08.jpg",
   ],
 
-  // ---- Testimonios ----
+  // ---- Testimonios (Google) ----
   testimonials: [
-    { quote: "El único salón donde nunca he mirado el reloj.", name: "Andrea M." },
-    { quote: "Reservé por WhatsApp a las 11pm, confirmada antes de despertar.", name: "Fernanda R." },
-    { quote: "Se siente como un spa de hotel, no un salón de strip mall.", name: "Carolina V." },
+    {
+      quote:
+        "Buen servicio, me gusta que está abierto desde las 8 am; y te atienden sin hacer cita previa.",
+      name: "Marilyn Monroy",
+    },
+    {
+      quote: "Servicio de excelencia. Buen trato. Buen precio.",
+      name: "Dunia Andara",
+    },
+    {
+      quote: "Un salón de belleza completamente con todo.",
+      name: "Julizza Peña",
+    },
+    {
+      quote: "Excelente precio y servicio.",
+      name: "Oscar Solis",
+    },
   ],
 
-  // ---- Imágenes de ambiente ----
-  heroImage:
-    "https://images.unsplash.com/photo-1522336572468-97b06e8ef143?q=80&w=1800&auto=format&fit=crop",
-  visitImage:
-    "https://images.unsplash.com/photo-1521931961826-fe48677230a5?q=80&w=1400&auto=format&fit=crop",
+  // ---- Imágenes ----
+  logoImage: "images/logo.jpg",
+  heroImage: "images/hero.jpg",
+  visitImage: "images/visit.jpg",
 
   // ---- Textos de interfaz ----
   ui: {
-    metaDescription: "MAISON VELA — Una casa de belleza privada para cabello, uñas y piel.",
+    metaDescription:
+      "Scarleth — Sala de Belleza en Comayagua. Cabello y uñas en Scarleth #1 y Scarleth #2. Reserva por WhatsApp.",
     navServices: "Servicios",
-    navExperience: "Experiencia",
+    navExperience: "Cuidado",
     navGallery: "Galería",
     navVisit: "Visítanos",
     navBook: "Reservar",
@@ -136,16 +174,16 @@ const CONFIG = {
     heroSecondary: "Ver servicios",
     heroScroll: "Desliza",
     servicesEyebrow: "Lo Que Hacemos",
-    servicesTitle: "Tres salas, un solo estándar.",
-    ritualEyebrow: "La Experiencia",
-    ritualTitle: "Cada visita, el mismo ritual.",
-    galleryEyebrow: "Dentro de la Casa",
-    galleryTitle: "Un espacio hecho para bajar el ritmo.",
+    servicesTitle: "Cabello y uñas, con el mismo cuidado.",
+    ritualEyebrow: "Cuidado Profesional",
+    ritualTitle: "Cuatro pasos para un cabello sano.",
+    galleryEyebrow: "Nuestro Trabajo",
+    galleryTitle: "Resultados que hablan solos.",
     galleryImageAlt: "Imagen de galería",
-    testimonialsEyebrow: "De Boca en Boca",
-    testimonialsTitle: "Lo que repiten nuestras clientas.",
-    visitEyebrow: "Encuéntranos",
-    visitTitle: "Visita la casa.",
+    testimonialsEyebrow: "Clientas",
+    testimonialsTitle: "Lo que dicen en Google.",
+    visitEyebrow: "Dos Sucursales",
+    visitTitle: "Visítanos en Comayagua.",
     visitImageAlt: "Interior del salón",
     footerEyebrow: "Cuando Quieras",
     footerTitle: "Reserva tu cita.",
@@ -153,11 +191,15 @@ const CONFIG = {
     whatsappLabel: "WhatsApp",
     metaSpecialty: "Especialidad",
     metaHours: "Horario",
-    metaContact: "Contacto directo",
+    metaContact: "Sucursales",
     gallerySoon: "Foto próximamente",
     lightboxLabel: "Vista previa de galería",
     lightboxClose: "Cerrar",
     lightboxPrev: "Anterior",
     lightboxNext: "Siguiente",
+    locationPickerTitle: "¿En cuál sucursal?",
+    locationPickerHint: "Te abrimos WhatsApp con la sucursal que elijas.",
+    locationPickerClose: "Cerrar",
+    mapsLabel: "Ver en Maps",
   },
 };

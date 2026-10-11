@@ -3,19 +3,31 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta name="description" content="MAISON VELA — Una casa de belleza privada para cabello, uñas y piel.">
-<meta name="theme-color" content="#000000">
-<title>MAISON VELA — Cabello, Uñas y Piel</title>
+<meta name="description" content="Scarleth — Sala de Belleza en Comayagua. Cabello y uñas. Reserva por WhatsApp.">
+<meta name="theme-color" content="#F2F2F0">
+<meta property="og:title" content="Scarleth — Sala de Belleza">
+<meta property="og:description" content="Cabello y uñas en Comayagua. Scarleth #1 y Scarleth #2.">
+<meta property="og:image" content="images/logo.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="images/logo.jpg" type="image/jpeg">
+<link rel="apple-touch-icon" href="images/logo.jpg">
+<title>Scarleth — Sala de Belleza</title>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <nav class="nav" id="nav">
-  <a href="#top" class="nav-brand" id="nav-brand"><span id="nav-name"></span></a>
-  <a href="#" class="nav-cta" id="nav-whatsapp" target="_blank" rel="noopener">
+  <a href="#top" class="nav-brand" id="nav-brand" aria-label="Scarleth — Sala de Belleza">
+    <img src="images/logo.jpg" alt="Scarleth" class="nav-logo" id="nav-logo" width="160" height="48">
+    <span class="nav-brand-text">
+      <span id="nav-name"></span>
+      <span class="nav-subtitle" id="nav-subtitle"></span>
+    </span>
+  </a>
+  <button type="button" class="nav-cta" id="nav-whatsapp">
     <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.13-2.9-7C17.18 3.03 14.7 2 12.04 2Zm0 18.14h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.23 8.23 0 0 1-1.26-4.37c0-4.55 3.7-8.25 8.26-8.25 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.84c0 4.55-3.71 8.22-8.25 8.22Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.4-.12-.56.13-.17.25-.65.81-.79.97-.15.17-.29.19-.54.06-.25-.12-1.04-.38-1.99-1.22-.73-.66-1.23-1.46-1.37-1.71-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.44.12-.15.16-.25.24-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.42h-.48c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.08 0 1.22.89 2.4 1.02 2.57.12.17 1.75 2.67 4.24 3.75.59.26 1.06.41 1.42.52.6.19 1.14.16 1.57.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.16-.48-.28Z"/></svg>
     <span id="nav-cta-label"></span>
-  </a>
+  </button>
 </nav>
 
 <header class="hero" id="top">
@@ -38,15 +50,21 @@
     <h1 data-reveal style="--delay:.1s" id="hero-title"></h1>
     <p class="hero-desc" data-reveal style="--delay:.2s" id="hero-sub"></p>
     <div class="hero-actions" data-reveal style="--delay:.3s">
-      <a href="#" class="btn btn-primary" id="hero-whatsapp" target="_blank" rel="noopener">
+      <button type="button" class="btn btn-primary" id="hero-whatsapp">
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.13-2.9-7C17.18 3.03 14.7 2 12.04 2Zm0 18.14h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.23 8.23 0 0 1-1.26-4.37c0-4.55 3.7-8.25 8.26-8.25 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.84c0 4.55-3.71 8.22-8.25 8.22Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.4-.12-.56.13-.17.25-.65.81-.79.97-.15.17-.29.19-.54.06-.25-.12-1.04-.38-1.99-1.22-.73-.66-1.23-1.46-1.37-1.71-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.44.12-.15.16-.25.24-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.42h-.48c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.08 0 1.22.89 2.4 1.02 2.57.12.17 1.75 2.67 4.24 3.75.59.26 1.06.41 1.42.52.6.19 1.14.16 1.57.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.16-.48-.28Z"/></svg>
         <span id="hero-cta"></span>
-      </a>
+      </button>
       <a href="#servicios" class="btn btn-ghost" id="hero-secondary"></a>
     </div>
     <div class="hero-social" data-reveal style="--delay:.32s">
       <a href="#" class="hero-social-btn" id="hero-instagram" target="_blank" rel="noopener" aria-label="Instagram">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+      </a>
+      <a href="#" class="hero-social-btn" id="hero-facebook" target="_blank" rel="noopener" aria-label="Facebook">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 9h3V6h-3c-1.7 0-3 1.3-3 3v2H8v3h3v7h3v-7h3l1-3h-4V9c0-.6.4-1 1-1Z"/></svg>
+      </a>
+      <a href="#" class="hero-social-btn" id="hero-tiktok" target="_blank" rel="noopener" aria-label="TikTok">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.6 8.3c-1.5-.1-2.9-.8-3.9-1.9V15a5.3 5.3 0 1 1-5.3-5.3c.3 0 .6 0 .9.1v2.6a2.7 2.7 0 1 0 1.9 2.6V2.5h2.5c.2 2.2 1.9 4 4 4.2v1.6Z"/></svg>
       </a>
     </div>
     <div class="hero-meta" data-reveal style="--delay:.35s">
@@ -136,14 +154,7 @@
         </div>
       </div>
       <div class="contact-card" data-reveal style="--delay:.1s">
-        <div class="contact-row">
-          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 21c4-3.2 7-6.6 7-10.5A7 7 0 0 0 5 10.5C5 14.4 8 17.8 12 21Z"/><circle cx="12" cy="10.5" r="2.3"/></svg></div>
-          <div class="txt"><b id="contact-address"></b></div>
-        </div>
-        <div class="contact-row">
-          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.3 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C11.4 21 3 12.6 3 2.7c0-.6.4-1 1-1H7.7c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1L6.6 10.8Z"/></svg></div>
-          <div class="txt"><b id="contact-phone"></b><span id="contact-phone-note"></span></div>
-        </div>
+        <div id="contact-locations" class="contact-locations"></div>
         <div class="contact-row">
           <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></div>
           <div class="txt">
@@ -151,14 +162,22 @@
             <div class="hours-stack" id="contact-hours"></div>
           </div>
         </div>
-        <a href="#" class="contact-cta-big" id="contact-whatsapp" target="_blank" rel="noopener">
+        <button type="button" class="contact-cta-big" id="contact-whatsapp">
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.13-2.9-7C17.18 3.03 14.7 2 12.04 2Zm0 18.14h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.23 8.23 0 0 1-1.26-4.37c0-4.55 3.7-8.25 8.26-8.25 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.84c0 4.55-3.71 8.22-8.25 8.22Z"/></svg>
           <span id="contact-cta"></span>
-        </a>
+        </button>
         <div class="social-row">
           <a href="#" class="social-pill" id="social-instagram" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
             <span id="social-instagram-label"></span>
+          </a>
+          <a href="#" class="social-pill" id="social-facebook" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 9h3V6h-3c-1.7 0-3 1.3-3 3v2H8v3h3v7h3v-7h3l1-3h-4V9c0-.6.4-1 1-1Z"/></svg>
+            <span>Facebook</span>
+          </a>
+          <a href="#" class="social-pill" id="social-tiktok" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.6 8.3c-1.5-.1-2.9-.8-3.9-1.9V15a5.3 5.3 0 1 1-5.3-5.3c.3 0 .6 0 .9.1v2.6a2.7 2.7 0 1 0 1.9 2.6V2.5h2.5c.2 2.2 1.9 4 4 4.2v1.6Z"/></svg>
+            <span id="social-tiktok-label"></span>
           </a>
         </div>
       </div>
@@ -173,6 +192,18 @@
     <a id="footer-insta" target="_blank" rel="noopener"></a>
   </div>
 </footer>
+
+<div class="location-picker" id="location-picker" hidden aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="location-picker-title">
+  <button type="button" class="location-picker-backdrop" id="location-picker-backdrop" tabindex="-1" aria-label="Cerrar"></button>
+  <div class="location-picker-panel">
+    <button type="button" class="location-picker-close" id="location-picker-close" aria-label="Cerrar">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke-linecap="round"/></svg>
+    </button>
+    <p class="location-picker-kicker" id="location-picker-title"></p>
+    <p class="location-picker-hint" id="location-picker-hint"></p>
+    <div class="location-picker-options" id="location-picker-options"></div>
+  </div>
+</div>
 
 <div class="lightbox" id="gallery-lightbox" hidden aria-hidden="true" role="dialog" aria-modal="true">
   <button type="button" class="lightbox-close" id="lightbox-close">
@@ -195,7 +226,7 @@
 (function () {
   const c = CONFIG;
   const u = c.ui;
-  const waLink = `https://wa.me/${c.whatsappNumber}?text=${encodeURIComponent(c.whatsappDefaultMessage)}`;
+  const locations = Array.isArray(c.locations) ? c.locations : [];
 
   function esc(value) {
     return String(value ?? "").replace(/[&<>"']/g, (ch) => ({
@@ -207,8 +238,13 @@
     }[ch]));
   }
 
+  function waLinkFor(location) {
+    const message = `${c.whatsappDefaultMessage} (${location.name})`;
+    return `https://wa.me/${location.whatsappNumber}?text=${encodeURIComponent(message)}`;
+  }
+
   document.documentElement.lang = c.lang || "es";
-  document.title = `${c.brandName} — ${c.tagline}`;
+  document.title = `${c.brandName} — ${c.brandSubtitle || c.tagline}`;
   const description = document.querySelector('meta[name="description"]');
   if (description) description.content = u.metaDescription;
   const theme = document.querySelector('meta[name="theme-color"]');
@@ -233,13 +269,14 @@
     if (c.colors[key]) rootStyle.setProperty(cssVar, c.colors[key]);
   });
 
-  const brandParts = c.brandName.trim().split(/\s+/);
   const navName = document.getElementById("nav-name");
-  if (brandParts.length > 1) {
-    const last = brandParts.pop();
-    navName.innerHTML = `${esc(brandParts.join(" "))} <em>${esc(last)}</em>`;
-  } else {
-    navName.textContent = c.brandName;
+  const navSubtitle = document.getElementById("nav-subtitle");
+  const navLogo = document.getElementById("nav-logo");
+  navName.textContent = c.brandName;
+  if (navSubtitle) navSubtitle.textContent = c.brandSubtitle || "";
+  if (navLogo && c.logoImage) {
+    navLogo.src = c.logoImage;
+    navLogo.alt = `${c.brandName} — ${c.brandSubtitle || c.tagline}`;
   }
 
   document.getElementById("nav-cta-label").textContent = u.navBook;
@@ -252,7 +289,7 @@
   document.getElementById("meta-specialty").textContent = c.tagline;
   document.getElementById("meta-hours-label").textContent = u.metaHours;
   document.getElementById("meta-contact-label").textContent = u.metaContact;
-  document.getElementById("meta-contact").textContent = c.phoneDisplay;
+  document.getElementById("meta-contact").textContent = locations.map((loc) => loc.name).join(" · ") || c.brandName;
   if (c.hours[0]) {
     document.getElementById("meta-hours").textContent = `${c.hours[0].day} · ${c.hours[0].time}`;
   }
@@ -266,22 +303,88 @@
   accent.textContent = line2;
   title.append(accent);
 
+  const picker = document.getElementById("location-picker");
+  const pickerOptions = document.getElementById("location-picker-options");
+  const pickerTitle = document.getElementById("location-picker-title");
+  const pickerHint = document.getElementById("location-picker-hint");
+  let lastFocus = null;
+
+  function closeLocationPicker() {
+    if (!picker || picker.hidden) return;
+    picker.hidden = true;
+    picker.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("picker-open");
+    if (lastFocus && typeof lastFocus.focus === "function") lastFocus.focus();
+  }
+
+  function openLocationPicker(trigger) {
+    if (!picker || !locations.length) return;
+    lastFocus = trigger || document.activeElement;
+    picker.hidden = false;
+    picker.setAttribute("aria-hidden", "false");
+    document.body.classList.add("picker-open");
+    const first = pickerOptions.querySelector("a, button");
+    if (first) first.focus();
+  }
+
+  if (pickerOptions) {
+    pickerTitle.textContent = u.locationPickerTitle;
+    pickerHint.textContent = u.locationPickerHint;
+    document.getElementById("location-picker-close").setAttribute("aria-label", u.locationPickerClose);
+    document.getElementById("location-picker-backdrop").setAttribute("aria-label", u.locationPickerClose);
+    pickerOptions.innerHTML = locations.map((location) => `
+      <a class="location-option" href="${esc(waLinkFor(location))}" target="_blank" rel="noopener">
+        <span class="location-option-name">${esc(location.name)}</span>
+        <span class="location-option-meta">${esc(location.phoneDisplay)}</span>
+        <span class="location-option-meta">${esc(location.address)}</span>
+      </a>
+    `).join("");
+  }
+
   ["nav-whatsapp", "hero-whatsapp", "contact-whatsapp"].forEach((id) => {
     const el = document.getElementById(id);
-    el.href = waLink;
+    if (!el) return;
+    el.setAttribute("aria-label", u.whatsappLabel);
+    el.addEventListener("click", (event) => {
+      event.preventDefault();
+      openLocationPicker(el);
+    });
   });
-  document.getElementById("nav-whatsapp").setAttribute("aria-label", u.whatsappLabel);
+
+  document.getElementById("location-picker-close").addEventListener("click", closeLocationPicker);
+  document.getElementById("location-picker-backdrop").addEventListener("click", closeLocationPicker);
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") closeLocationPicker();
+  });
 
   const heroInsta = document.getElementById("hero-instagram");
   const socialInsta = document.getElementById("social-instagram");
   const footerInsta = document.getElementById("footer-insta");
+  const heroFacebook = document.getElementById("hero-facebook");
+  const socialFacebook = document.getElementById("social-facebook");
+  const heroTiktok = document.getElementById("hero-tiktok");
+  const socialTiktok = document.getElementById("social-tiktok");
+
   [heroInsta, socialInsta, footerInsta].forEach((el) => {
+    if (!el) return;
     el.href = c.instagramUrl;
     el.setAttribute("aria-label", c.instagramHandle);
   });
-  heroInsta.setAttribute("aria-label", c.instagramHandle);
   document.getElementById("social-instagram-label").textContent = c.instagramHandle;
   footerInsta.textContent = c.instagramHandle;
+
+  [heroFacebook, socialFacebook].forEach((el) => {
+    if (!el || !c.facebookUrl) return;
+    el.href = c.facebookUrl;
+    el.setAttribute("aria-label", "Facebook");
+  });
+  [heroTiktok, socialTiktok].forEach((el) => {
+    if (!el || !c.tiktokUrl) return;
+    el.href = c.tiktokUrl;
+    el.setAttribute("aria-label", c.tiktokHandle || "TikTok");
+  });
+  const tiktokLabel = document.getElementById("social-tiktok-label");
+  if (tiktokLabel) tiktokLabel.textContent = c.tiktokHandle || "TikTok";
 
   const heroEl = document.querySelector(".hero");
   const heroMedia = document.getElementById("hero-media");
@@ -332,16 +435,34 @@
   document.getElementById("testimonials-title").textContent = u.testimonialsTitle;
   document.getElementById("visit-eyebrow").textContent = u.visitEyebrow;
   document.getElementById("visit-title").textContent = u.visitTitle;
-  document.getElementById("contact-address").textContent = c.address;
-  document.getElementById("contact-phone").textContent = c.phoneDisplay;
-  document.getElementById("contact-phone-note").textContent = u.footerCta;
   document.getElementById("contact-hours-title").textContent = u.metaHours;
   document.getElementById("contact-cta").textContent = u.footerCta;
   document.getElementById("contact-hours").innerHTML = (c.hours || []).map((hour) => `
     <div class="hours-line"><span>${esc(hour.day)}</span><span>${esc(hour.time)}</span></div>
   `).join("");
-  document.getElementById("footer-brand").textContent = `${c.brandName} — ${c.tagline}`;
-  document.getElementById("footer-meta").textContent = `${c.phoneDisplay} · ${c.address}`;
+
+  const locationsEl = document.getElementById("contact-locations");
+  if (locationsEl) {
+    locationsEl.innerHTML = locations.map((location) => `
+      <div class="location-block">
+        <div class="location-block-name">${esc(location.name)}</div>
+        <div class="contact-row">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 21c4-3.2 7-6.6 7-10.5A7 7 0 0 0 5 10.5C5 14.4 8 17.8 12 21Z"/><circle cx="12" cy="10.5" r="2.3"/></svg></div>
+          <div class="txt">
+            <b>${esc(location.address)}</b>
+            ${location.mapsUrl ? `<a class="maps-link" href="${esc(location.mapsUrl)}" target="_blank" rel="noopener">${esc(u.mapsLabel)}</a>` : ""}
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.3 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C11.4 21 3 12.6 3 2.7c0-.6.4-1 1-1H7.7c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1L6.6 10.8Z"/></svg></div>
+          <div class="txt"><b>${esc(location.phoneDisplay)}</b></div>
+        </div>
+      </div>
+    `).join("");
+  }
+
+  document.getElementById("footer-brand").textContent = `${c.brandName} — ${c.brandSubtitle || c.tagline}`;
+  document.getElementById("footer-meta").textContent = locations.map((loc) => loc.name).join(" · ") || c.tagline;
 
   const lightbox = document.getElementById("gallery-lightbox");
   lightbox.setAttribute("aria-label", u.lightboxLabel);
