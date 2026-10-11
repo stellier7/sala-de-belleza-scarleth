@@ -1318,6 +1318,12 @@ body:has(.hero.has-hero-image) .nav:not(.scrolled) .nav-link[aria-current="page"
 .products-marquee.is-reduced .product-card {
   scroll-snap-align: start;
 }
+.products-marquee .product-card-add {
+  pointer-events: auto;
+}
+.products-marquee-track .product-card {
+  cursor: default;
+}
 @keyframes product-marquee {
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }
@@ -1342,12 +1348,15 @@ body:has(.hero.has-hero-image) .nav:not(.scrolled) .nav-link[aria-current="page"
   color: inherit;
   font: inherit;
 }
-button.product-card {
+button.product-card,
+.product-card.is-clickable {
   cursor: pointer;
   transition: transform .35s var(--ease);
 }
 button.product-card:hover,
-button.product-card:focus-visible {
+button.product-card:focus-visible,
+.product-card.is-clickable:hover,
+.product-card.is-clickable:focus-visible {
   transform: translateY(-4px);
   outline: none;
 }

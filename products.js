@@ -423,9 +423,11 @@
     const opts = options || {};
     const interactive = opts.interactive !== false;
     const showAdd = Boolean(opts.showAdd);
-    const card = document.createElement(interactive ? "button" : "article");
+    // Use <article> when the card has nested controls (add button).
+    const useArticle = showAdd || !interactive;
+    const card = document.createElement(useArticle ? "article" : "button");
     card.className = "product-card";
-    card.type = interactive ? "button" : undefined;
+    if (!useArticle) card.type = "button";
     card.dataset.productId = product.id || "";
 
     const media = document.createElement("div");
@@ -491,7 +493,24 @@
     card.appendChild(body);
 
     if (interactive && typeof opts.onSelect === "function") {
-      card.addEventListener("click", () => opts.onSelect(product));
+      if (useArticle) {
+        card.classList.add("is-clickable");
+        card.tabIndex = 0;
+        card.setAttribute("role", "button");
+        const open = () => opts.onSelect(product);
+        card.addEventListener("click", (event) => {
+          if (event.target.closest(".product-card-add")) return;
+          open();
+        });
+        card.addEventListener("keydown", (event) => {
+          if (event.key !== "Enter" && event.key !== " ") return;
+          if (event.target.closest(".product-card-add")) return;
+          event.preventDefault();
+          open();
+        });
+      } else {
+        card.addEventListener("click", () => opts.onSelect(product));
+      }
     }
 
     return card;
@@ -522,8 +541,10 @@
 
     const appendSet = () => {
       products.forEach((product) => {
-        const card = createProductCard(product, { interactive: false });
-        card.setAttribute("tabindex", "-1");
+        const card = createProductCard(product, {
+          interactive: false,
+          showAdd: true,
+        });
         track.appendChild(card);
       });
     };
