@@ -304,6 +304,7 @@
   document.getElementById("nav-cta-label").textContent = u.navBook;
   const navProducts = document.getElementById("nav-products");
   if (navProducts) navProducts.textContent = u.navProducts || "Productos";
+  if (window.ProductsUI) ProductsUI.initCartUI();
   document.getElementById("hero-eyebrow").textContent = c.heroEyebrow;
   document.getElementById("hero-sub").textContent = c.heroSub;
   document.getElementById("hero-cta").textContent = u.heroCta;

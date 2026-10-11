@@ -82,9 +82,12 @@
       <span class="product-tag" id="product-modal-category"></span>
       <h2 id="product-modal-name"></h2>
       <p class="product-price" id="product-modal-price" hidden></p>
-      <a class="btn btn-primary" id="product-modal-whatsapp" href="#" target="_blank" rel="noopener">
-        Consultar por WhatsApp
-      </a>
+      <div class="product-modal-actions">
+        <button type="button" class="btn btn-primary" id="product-modal-add">Agregar al carrito</button>
+        <a class="btn btn-ghost" id="product-modal-whatsapp" href="#" target="_blank" rel="noopener">
+          Consultar por WhatsApp
+        </a>
+      </div>
     </div>
   </div>
 </div>
@@ -98,6 +101,7 @@
 
   if (window.ProductsUI) {
     ProductsUI.applyBrandChrome();
+    ProductsUI.initCartUI();
     ProductsUI.initCatalogPage();
   }
 
