@@ -218,7 +218,7 @@ const CONFIG = {
       category: "Champús",
       image: "images/products/photo-02-wella-ultimate-repair.jpg",
       crop: { x: 16, y: 48, w: 19, h: 40 },
-      featured: true,
+      featured: false,
       price: null,
     },
     {
@@ -325,7 +325,7 @@ const CONFIG = {
       category: "Tratamientos",
       image: "images/products/photo-06-firenze-keratin.jpg",
       crop: { x: 38, y: 13, w: 30, h: 72 },
-      featured: false,
+      featured: true,
       price: null,
     },
     {
@@ -385,7 +385,7 @@ const CONFIG = {
       category: "Styling",
       image: "images/products/photo-09-luseta-curl-cream.jpg",
       crop: null,
-      featured: false,
+      featured: true,
       price: null,
     },
 
@@ -482,20 +482,11 @@ const CONFIG = {
 
     // photo-15 — ecosmetics BK Brazilian Keratin (línea; botellas con etiqueta legible)
     {
-      id: "bk-progressiva-1l",
-      name: "BK Brazilian Keratin Progressiva 1L",
+      id: "bk-progressiva",
+      name: "BK Brazilian Keratin Progressiva",
       category: "Keratina",
       image: "images/products/photo-15-bk-brazilian-keratin.jpg",
-      crop: { x: 28, y: 58, w: 18, h: 36 },
-      featured: false,
-      price: null,
-    },
-    {
-      id: "bk-progressiva-500ml",
-      name: "BK Brazilian Keratin Progressiva 500ml",
-      category: "Keratina",
-      image: "images/products/photo-15-bk-brazilian-keratin.jpg",
-      crop: { x: 18, y: 62, w: 12, h: 30 },
+      crop: { x: 22, y: 58, w: 24, h: 36 },
       featured: false,
       price: null,
     },
@@ -731,7 +722,7 @@ const CONFIG = {
       category: "Champús",
       image: "images/products/photo-20-olaplex-4c-8.jpg",
       crop: { x: 8, y: 12, w: 42, h: 78 },
-      featured: true,
+      featured: false,
       price: null,
     },
 
