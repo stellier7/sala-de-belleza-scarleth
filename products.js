@@ -14,17 +14,22 @@
     );
   }
 
+  function getConfig() {
+    // Classic <script> shares lexical CONFIG from config.js; it is not on window.
+    if (typeof CONFIG !== "undefined") return CONFIG;
+    return global.CONFIG || {};
+  }
+
   function getProducts() {
-    return Array.isArray(global.CONFIG && global.CONFIG.products)
-      ? global.CONFIG.products
-      : [];
+    const c = getConfig();
+    return Array.isArray(c.products) ? c.products : [];
   }
 
   function getCategories() {
-    const configured =
-      global.CONFIG && Array.isArray(global.CONFIG.productCategories)
-        ? global.CONFIG.productCategories
-        : [];
+    const c = getConfig();
+    const configured = Array.isArray(c.productCategories)
+      ? c.productCategories
+      : [];
     if (configured.length) return configured.slice();
     const seen = new Set();
     getProducts().forEach((p) => {
@@ -34,7 +39,7 @@
   }
 
   function getWhatsAppNumber() {
-    const c = global.CONFIG || {};
+    const c = getConfig();
     if (c.whatsappNumber) return String(c.whatsappNumber).replace(/\D/g, "");
     const first = Array.isArray(c.locations) && c.locations[0];
     if (first && first.whatsappNumber) {
@@ -152,7 +157,7 @@
     const products = getProducts().filter((p) => p.featured);
     const track = root.querySelector("[data-marquee-track]");
     const cta = root.querySelector("[data-products-cta]");
-    const ui = (global.CONFIG && global.CONFIG.ui) || {};
+    const ui = getConfig().ui || {};
 
     if (cta) {
       cta.textContent = ui.productsViewAll || "Ver todos los productos";
@@ -211,7 +216,7 @@
     const grid = document.getElementById("catalog-grid");
     if (!grid) return;
 
-    const c = global.CONFIG || {};
+    const c = getConfig();
     const ui = c.ui || {};
     const products = getProducts();
     const categories = getCategories();
@@ -370,8 +375,8 @@
   }
 
   function applyBrandChrome() {
-    const c = global.CONFIG;
-    if (!c) return;
+    const c = getConfig();
+    if (!c || !c.brandName) return;
     const ui = c.ui || {};
 
     document.documentElement.lang = c.lang || "es";

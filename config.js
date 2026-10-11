@@ -447,3 +447,6 @@ const CONFIG = {
     mapsLabel: "Ver en Maps",
   },
 };
+
+// Expose for helpers that read window.CONFIG (const is lexical-only).
+if (typeof window !== "undefined") window.CONFIG = CONFIG;
