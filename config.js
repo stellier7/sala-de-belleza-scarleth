@@ -166,24 +166,22 @@ const CONFIG = {
     "Champús",
     "Acondicionadores",
     "Tratamientos",
-    "Keratina",
     "Color",
     "Styling",
   ],
 
   // ---- Productos (extraídos de fotos de Facebook) ----
   products: [
-    // photo-01 — Maxybelt Tono a Tono (4)
-    {
+{
       id: "maxybelt-tono-cobre",
       name: "Shampoo Tono a Tono Cobre Maxybelt",
       category: "Color",
       image: "images/products/photo-01-maxybelt-tono.jpg",
       crop: { x: 0, y: 0, w: 50, h: 50 },
-      featured: false,
+      featured: true,
       price: null,
     },
-    {
+{
       id: "maxybelt-tono-negro-noche",
       name: "Shampoo Tono a Tono Negro Noche Maxybelt",
       category: "Color",
@@ -192,7 +190,7 @@ const CONFIG = {
       featured: false,
       price: null,
     },
-    {
+{
       id: "maxybelt-tono-beige-almendra",
       name: "Shampoo Tono a Tono Beige Almendra Maxybelt",
       category: "Color",
@@ -201,7 +199,7 @@ const CONFIG = {
       featured: false,
       price: null,
     },
-    {
+{
       id: "maxybelt-tono-chocolate-carioca",
       name: "Tratamiento Tono a Tono Chocolate Carioca Maxybelt",
       category: "Color",
@@ -210,105 +208,7 @@ const CONFIG = {
       featured: false,
       price: null,
     },
-
-    // photo-02 — Wella Ultimate Repair (4)
-    {
-      id: "wella-ultimate-repair-shampoo",
-      name: "Champú Wella Ultimate Repair (Paso 1)",
-      category: "Champús",
-      image: "images/products/photo-02-wella-ultimate-repair.jpg",
-      crop: { x: 16, y: 48, w: 19, h: 40 },
-      featured: false,
-      price: null,
-    },
-    {
-      id: "wella-ultimate-repair-mask",
-      name: "Mascarilla Wella Ultimate Repair",
-      category: "Tratamientos",
-      image: "images/products/photo-02-wella-ultimate-repair.jpg",
-      crop: { x: 31, y: 71, w: 28, h: 20 },
-      featured: false,
-      price: null,
-    },
-    {
-      id: "wella-ultimate-repair-miracle-rescue",
-      name: "Tratamiento Wella Miracle Hair Rescue (Paso 3)",
-      category: "Tratamientos",
-      image: "images/products/photo-02-wella-ultimate-repair.jpg",
-      crop: { x: 63, y: 60, w: 12, h: 32 },
-      featured: false,
-      price: null,
-    },
-    {
-      id: "wella-ultimate-repair-protective-leave-in",
-      name: "Protector sin Aclarado Wella Ultimate Repair (Paso 4)",
-      category: "Tratamientos",
-      image: "images/products/photo-02-wella-ultimate-repair.jpg",
-      crop: { x: 75, y: 39, w: 16, h: 52 },
-      featured: false,
-      price: null,
-    },
-
-    // photo-03 — Wella Fusion (3)
-    {
-      id: "wella-fusion-shampoo",
-      name: "Champú Wella Fusion Intense Repair",
-      category: "Champús",
-      image: "images/products/photo-03-wella-fusion.jpg",
-      crop: { x: 34, y: 28, w: 16, h: 59 },
-      featured: true,
-      price: null,
-    },
-    {
-      id: "wella-fusion-conditioner",
-      name: "Acondicionador Wella Fusion Intense Repair",
-      category: "Acondicionadores",
-      image: "images/products/photo-03-wella-fusion.jpg",
-      crop: { x: 62, y: 30, w: 26, h: 56 },
-      featured: false,
-      price: null,
-    },
-    {
-      id: "wella-fusion-mask",
-      name: "Mascarilla Wella Fusion Intense Repair",
-      category: "Tratamientos",
-      image: "images/products/photo-03-wella-fusion.jpg",
-      crop: { x: 47, y: 70, w: 26, h: 23 },
-      featured: false,
-      price: null,
-    },
-
-    // photo-04 — Wella Color Motion+ (3)
-    {
-      id: "wella-color-motion-shampoo",
-      name: "Champú Wella Color Motion+",
-      category: "Champús",
-      image: "images/products/photo-04-wella-color-motion.jpg",
-      crop: { x: 17, y: 28, w: 16, h: 58 },
-      featured: false,
-      price: null,
-    },
-    {
-      id: "wella-color-motion-conditioner",
-      name: "Acondicionador Wella Color Motion+",
-      category: "Acondicionadores",
-      image: "images/products/photo-04-wella-color-motion.jpg",
-      crop: { x: 34, y: 31, w: 21, h: 50 },
-      featured: false,
-      price: null,
-    },
-    {
-      id: "wella-color-motion-mask",
-      name: "Mascarilla Structure+ Wella Color Motion+",
-      category: "Tratamientos",
-      image: "images/products/photo-04-wella-color-motion.jpg",
-      crop: { x: 52, y: 62, w: 24, h: 20 },
-      featured: false,
-      price: null,
-    },
-
-    // photo-05 — Wella EIMI Thermal Image (1)
-    {
+{
       id: "wella-eimi-thermal-image",
       name: "Spray Termoprotector Wella EIMI Thermal Image",
       category: "Styling",
@@ -317,18 +217,7 @@ const CONFIG = {
       featured: true,
       price: null,
     },
-
-    // photo-06 — Firenze Professional (2)
-    {
-      id: "firenze-keratin-antifrizz-serum",
-      name: "Serum Keratin Antifrizz Firenze Professional",
-      category: "Tratamientos",
-      image: "images/products/photo-06-firenze-keratin.jpg",
-      crop: { x: 38, y: 13, w: 30, h: 72 },
-      featured: true,
-      price: null,
-    },
-    {
+{
       id: "firenze-keratin-leave-in-ampoules",
       name: "Ampollas Keratin Leave-In Firenze",
       category: "Tratamientos",
@@ -337,9 +226,7 @@ const CONFIG = {
       featured: false,
       price: null,
     },
-
-    // photo-07 — Olaplex Nº.8 (1)
-    {
+{
       id: "olaplex-no8-moisture-mask",
       name: "Mascarilla Olaplex Nº.8 Bond Intense Moisture",
       category: "Tratamientos",
@@ -348,9 +235,7 @@ const CONFIG = {
       featured: true,
       price: null,
     },
-
-    // photo-08 — TRUSS Miracle Summer (3)
-    {
+{
       id: "truss-miracle-summer-shampoo",
       name: "Champú Truss Miracle Summer",
       category: "Champús",
@@ -359,16 +244,7 @@ const CONFIG = {
       featured: false,
       price: null,
     },
-    {
-      id: "truss-miracle-summer-conditioner",
-      name: "Acondicionador Truss Miracle Summer",
-      category: "Acondicionadores",
-      image: "images/products/photo-08-truss-miracle-summer.jpg",
-      crop: { x: 45, y: 0, w: 25, h: 95 },
-      featured: false,
-      price: null,
-    },
-    {
+{
       id: "truss-miracle-summer-mask",
       name: "Mascarilla Truss Miracle Summer",
       category: "Tratamientos",
@@ -377,9 +253,7 @@ const CONFIG = {
       featured: false,
       price: null,
     },
-
-    // photo-09 — Luseta Curl Cream (1)
-    {
+{
       id: "luseta-crema-rizos",
       name: "Crema para rizos Luseta",
       category: "Styling",
@@ -388,9 +262,7 @@ const CONFIG = {
       featured: true,
       price: null,
     },
-
-    // photo-10 — Chihtsai Instant Treatment No. 12 (1)
-    {
+{
       id: "chihtsai-instant-treatment-no12",
       name: "Tratamiento Instantáneo Chihtsai No. 12",
       category: "Tratamientos",
@@ -399,9 +271,7 @@ const CONFIG = {
       featured: true,
       price: null,
     },
-
-    // photo-11 — Chihtsai INSIGHT (2)
-    {
+{
       id: "chihtsai-insight-caffeine-shampoo",
       name: "Champú de Cafeína Chihtsai INSIGHT",
       category: "Champús",
@@ -410,18 +280,7 @@ const CONFIG = {
       featured: false,
       price: null,
     },
-    {
-      id: "chihtsai-insight-caffeine-serum",
-      name: "Suero de Cafeína Chihtsai INSIGHT",
-      category: "Tratamientos",
-      image: "images/products/photo-11-chihtsai-insight.jpg",
-      crop: { x: 48, y: 32, w: 22, h: 50 },
-      featured: false,
-      price: null,
-    },
-
-    // photo-12 — Moroccanoil Intense Smoothing Serum (1)
-    {
+{
       id: "moroccanoil-intense-smoothing-serum",
       name: "Sérum Suavizante Intenso Moroccanoil",
       category: "Tratamientos",
@@ -430,9 +289,7 @@ const CONFIG = {
       featured: true,
       price: null,
     },
-
-    // photo-13 — Mineral+ Mud (1)
-    {
+{
       id: "mineral-plus-mud",
       name: "Máscara Mineral+ Mud",
       category: "Tratamientos",
@@ -441,132 +298,7 @@ const CONFIG = {
       featured: true,
       price: null,
     },
-
-    // photo-14 — LAKMÉ Teknia Scalp Care (4)
-    {
-      id: "lakme-teknia-vital-shampoo",
-      name: "Champú Lakmé Teknia Scalp Care Vital",
-      category: "Champús",
-      image: "images/products/photo-14-lakme-scalp-care.jpg",
-      crop: { x: 1, y: 16, w: 24, h: 58 },
-      featured: false,
-      price: null,
-    },
-    {
-      id: "lakme-teknia-relief-serum",
-      name: "Sérum Lakmé Teknia Scalp Care Relief",
-      category: "Tratamientos",
-      image: "images/products/photo-14-lakme-scalp-care.jpg",
-      crop: { x: 26, y: 20, w: 22, h: 52 },
-      featured: false,
-      price: null,
-    },
-    {
-      id: "lakme-teknia-pure-mask",
-      name: "Mascarilla Lakmé Teknia Scalp Care Pure",
-      category: "Tratamientos",
-      image: "images/products/photo-14-lakme-scalp-care.jpg",
-      crop: { x: 50, y: 34, w: 22, h: 40 },
-      featured: false,
-      price: null,
-    },
-    {
-      id: "lakme-teknia-detox-shampoo",
-      name: "Champú Lakmé Teknia Scalp Care Detox",
-      category: "Champús",
-      image: "images/products/photo-14-lakme-scalp-care.jpg",
-      crop: { x: 74, y: 16, w: 24, h: 58 },
-      featured: false,
-      price: null,
-    },
-
-    // photo-15 — ecosmetics BK Brazilian Keratin (línea; botellas con etiqueta legible)
-    {
-      id: "bk-progressiva",
-      name: "BK Brazilian Keratin Progressiva",
-      category: "Keratina",
-      image: "images/products/photo-15-bk-brazilian-keratin.jpg",
-      crop: { x: 22, y: 58, w: 24, h: 36 },
-      featured: false,
-      price: null,
-    },
-    {
-      id: "bk-hair-mask",
-      name: "Mascarilla BK Brazilian Keratin",
-      category: "Keratina",
-      image: "images/products/photo-15-bk-brazilian-keratin.jpg",
-      crop: { x: 2, y: 78, w: 14, h: 18 },
-      featured: false,
-      price: null,
-    },
-    {
-      id: "bk-spray-250ml",
-      name: "Spray BK Brazilian Keratin 250ml",
-      category: "Keratina",
-      image: "images/products/photo-15-bk-brazilian-keratin.jpg",
-      crop: { x: 42, y: 62, w: 10, h: 32 },
-      featured: false,
-      price: null,
-    },
-    {
-      id: "bk-serum",
-      name: "Sérum BK Brazilian Keratin",
-      category: "Keratina",
-      image: "images/products/photo-15-bk-brazilian-keratin.jpg",
-      crop: { x: 34, y: 78, w: 8, h: 16 },
-      featured: false,
-      price: null,
-    },
-
-    // photo-16 — Erayba + SH-RD (flyer Scarleth) (5)
-    {
-      id: "erayba-hydraker",
-      name: "Erayba HydraKer Keratin",
-      category: "Tratamientos",
-      image: "images/products/photo-16-erayba-shrd.jpg",
-      crop: { x: 4, y: 72, w: 14, h: 24 },
-      featured: false,
-      price: null,
-    },
-    {
-      id: "erayba-always-beautiful-leave-in",
-      name: "Acondicionador Leave-in Erayba Always Beautiful",
-      category: "Acondicionadores",
-      image: "images/products/photo-16-erayba-shrd.jpg",
-      crop: { x: 20, y: 72, w: 14, h: 24 },
-      featured: false,
-      price: null,
-    },
-    {
-      id: "erayba-zenactive-z12p",
-      name: "Champú Erayba ZenActive Z12p",
-      category: "Champús",
-      image: "images/products/photo-16-erayba-shrd.jpg",
-      crop: { x: 38, y: 70, w: 12, h: 26 },
-      featured: false,
-      price: null,
-    },
-    {
-      id: "shrd-nutra-therapy-shampoo",
-      name: "Champú SH-RD Nutra-Therapy",
-      category: "Champús",
-      image: "images/products/photo-16-erayba-shrd.jpg",
-      crop: { x: 54, y: 70, w: 14, h: 26 },
-      featured: false,
-      price: null,
-    },
-    {
-      id: "shrd-gold-protein",
-      name: "Tratamiento SH-RD Gold Protein",
-      category: "Tratamientos",
-      image: "images/products/photo-16-erayba-shrd.jpg",
-      crop: { x: 72, y: 74, w: 12, h: 20 },
-      featured: false,
-      price: null,
-    },
-
-    // photo-17 — TRUSS Deluxe Prime (1 producto, varias tomas)
-    {
+{
       id: "truss-deluxe-prime",
       name: "TRUSS Deluxe Prime Miracle",
       category: "Tratamientos",
@@ -575,299 +307,16 @@ const CONFIG = {
       featured: true,
       price: null,
     },
-
-    // photo-18 — TRUSS colección (productos con etiqueta legible)
-    {
-      id: "truss-air-libre-bleaching-powder",
-      name: "TRUSS Air.Libre Pó Descolorante",
-      category: "Color",
-      image: "images/products/photo-18-truss-collection.jpg",
-      crop: { x: 2, y: 28, w: 18, h: 48 },
-      featured: false,
-      price: null,
-    },
-    {
-      id: "truss-k-recovery",
-      name: "TRUSS K Recovery",
-      category: "Tratamientos",
-      image: "images/products/photo-18-truss-collection.jpg",
-      crop: { x: 18, y: 22, w: 12, h: 55 },
-      featured: false,
-      price: null,
-    },
-    {
-      id: "truss-night-spa-serum",
-      name: "Suero TRUSS Night Spa",
-      category: "Tratamientos",
-      image: "images/products/photo-18-truss-collection.jpg",
-      crop: { x: 32, y: 30, w: 10, h: 45 },
-      featured: false,
-      price: null,
-    },
-    {
-      id: "truss-infusion",
-      name: "TRUSS Infusion",
-      category: "Tratamientos",
-      image: "images/products/photo-18-truss-collection.jpg",
-      crop: { x: 48, y: 28, w: 12, h: 48 },
-      featured: false,
-      price: null,
-    },
-    {
-      id: "truss-blond-mask",
-      name: "Mascarilla TRUSS Blond Mask",
-      category: "Color",
-      image: "images/products/photo-18-truss-collection.jpg",
-      crop: { x: 42, y: 68, w: 16, h: 22 },
-      featured: false,
-      price: null,
-    },
-    {
-      id: "truss-miracle-shampoo",
-      name: "Champú TRUSS Miracle",
-      category: "Champús",
-      image: "images/products/photo-18-truss-collection.jpg",
-      crop: { x: 70, y: 35, w: 12, h: 48 },
-      featured: false,
-      price: null,
-    },
-    {
-      id: "truss-ultra-hydration-shampoo",
-      name: "Champú TRUSS Ultra Hydration",
-      category: "Champús",
-      image: "images/products/photo-18-truss-collection.jpg",
-      crop: { x: 82, y: 35, w: 14, h: 48 },
-      featured: false,
-      price: null,
-    },
-
-    // photo-19 — Selective Professional ONCARE (promo Scarleth #2)
-    {
-      id: "selective-oncare-daily-shampoo",
-      name: "Champú Selective ONCARE Daily Hidratante",
-      category: "Champús",
-      image: "images/products/photo-19-selective-oncare.jpg",
-      crop: { x: 4, y: 48, w: 10, h: 32 },
-      featured: false,
-      price: null,
-    },
-    {
-      id: "selective-oncare-color-block-balm",
-      name: "Bálsamo Selective ONCARE Color Block",
-      category: "Color",
-      image: "images/products/photo-19-selective-oncare.jpg",
-      crop: { x: 22, y: 58, w: 10, h: 24 },
-      featured: false,
-      price: null,
-    },
-    {
-      id: "selective-oncare-color-block-mask",
-      name: "Mascarilla Selective ONCARE Color Block",
-      category: "Color",
-      image: "images/products/photo-19-selective-oncare.jpg",
-      crop: { x: 30, y: 62, w: 12, h: 22 },
-      featured: false,
-      price: null,
-    },
-    {
-      id: "selective-oncare-refill-shampoo",
-      name: "Champú Selective ONCARE Refill Voluminizador",
-      category: "Champús",
-      image: "images/products/photo-19-selective-oncare.jpg",
-      crop: { x: 42, y: 48, w: 10, h: 32 },
-      featured: false,
-      price: null,
-    },
-    {
-      id: "selective-oncare-smooth-shampoo",
-      name: "Champú Selective ONCARE Smooth",
-      category: "Champús",
-      image: "images/products/photo-19-selective-oncare.jpg",
-      crop: { x: 58, y: 48, w: 10, h: 32 },
-      featured: false,
-      price: null,
-    },
-    {
-      id: "selective-oncare-smooth-spray",
-      name: "Spray Selective ONCARE Smooth",
-      category: "Styling",
-      image: "images/products/photo-19-selective-oncare.jpg",
-      crop: { x: 68, y: 48, w: 8, h: 34 },
-      featured: false,
-      price: null,
-    },
-    {
-      id: "selective-oncare-repair-conditioner",
-      name: "Acondicionador Selective ONCARE Repair",
-      category: "Acondicionadores",
-      image: "images/products/photo-19-selective-oncare.jpg",
-      crop: { x: 78, y: 58, w: 10, h: 24 },
-      featured: false,
-      price: null,
-    },
-    {
-      id: "selective-oncare-repair-serum",
-      name: "Sérum Selective ONCARE Repair",
-      category: "Tratamientos",
-      image: "images/products/photo-19-selective-oncare.jpg",
-      crop: { x: 72, y: 70, w: 8, h: 16 },
-      featured: false,
-      price: null,
-    },
-
-    // photo-20 — Olaplex Nº.4C + Nº.8 (Nº.8 ya existe; solo se añade 4C)
-    {
+{
       id: "olaplex-no4c-clarifying-shampoo",
       name: "Champú Clarificador Olaplex Nº.4C",
       category: "Champús",
       image: "images/products/photo-20-olaplex-4c-8.jpg",
       crop: { x: 8, y: 12, w: 42, h: 78 },
-      featured: false,
+      featured: true,
       price: null,
     },
-
-    // photo-21 — Cadiveu Essentials Vegan Repair by Anitta (5)
-    {
-      id: "cadiveu-vegan-repair-shampoo",
-      name: "Champú Cadiveu Vegan Repair",
-      category: "Champús",
-      image: "images/products/photo-21-cadiveu-vegan-repair.jpg",
-      crop: { x: 8, y: 8, w: 22, h: 70 },
-      featured: false,
-      price: null,
-    },
-    {
-      id: "cadiveu-vegan-repair-conditioner",
-      name: "Acondicionador Cadiveu Vegan Repair",
-      category: "Acondicionadores",
-      image: "images/products/photo-21-cadiveu-vegan-repair.jpg",
-      crop: { x: 30, y: 8, w: 22, h: 70 },
-      featured: false,
-      price: null,
-    },
-    {
-      id: "cadiveu-vegan-repair-beach-waves",
-      name: "Spray Beach Waves Cadiveu Vegan Repair",
-      category: "Styling",
-      image: "images/products/photo-21-cadiveu-vegan-repair.jpg",
-      crop: { x: 54, y: 5, w: 28, h: 72 },
-      featured: false,
-      price: null,
-    },
-    {
-      id: "cadiveu-vegan-repair-leave-in",
-      name: "Leave-in Cadiveu Vegan Repair",
-      category: "Tratamientos",
-      image: "images/products/photo-21-cadiveu-vegan-repair.jpg",
-      crop: { x: 62, y: 55, w: 28, h: 40 },
-      featured: false,
-      price: null,
-    },
-    {
-      id: "cadiveu-vegan-repair-mask",
-      name: "Mascarilla Cadiveu Vegan Repair",
-      category: "Tratamientos",
-      image: "images/products/photo-21-cadiveu-vegan-repair.jpg",
-      crop: { x: 28, y: 58, w: 32, h: 38 },
-      featured: false,
-      price: null,
-    },
-
-    // photo-22 — Revlon Professional RE/START (10)
-    {
-      id: "revlon-restart-antioxidant-primer",
-      name: "Revlon RE/START Antioxidant Powder Primer",
-      category: "Tratamientos",
-      image: "images/products/photo-22-revlon-restart.jpg",
-      crop: { x: 2, y: 52, w: 8, h: 28 },
-      featured: false,
-      price: null,
-    },
-    {
-      id: "revlon-restart-repair-bonding-shot",
-      name: "Revlon RE/START Repair Bonding Shot",
-      category: "Tratamientos",
-      image: "images/products/photo-22-revlon-restart.jpg",
-      crop: { x: 10, y: 42, w: 8, h: 40 },
-      featured: false,
-      price: null,
-    },
-    {
-      id: "revlon-restart-purple-drops",
-      name: "Revlon RE/START Anti-Brassiness Purple Drops",
-      category: "Color",
-      image: "images/products/photo-22-revlon-restart.jpg",
-      crop: { x: 20, y: 48, w: 6, h: 34 },
-      featured: false,
-      price: null,
-    },
-    {
-      id: "revlon-restart-volume-shampoo",
-      name: "Champú Revlon RE/START Volume",
-      category: "Champús",
-      image: "images/products/photo-22-revlon-restart.jpg",
-      crop: { x: 28, y: 42, w: 8, h: 40 },
-      featured: false,
-      price: null,
-    },
-    {
-      id: "revlon-restart-balance-shampoo",
-      name: "Champú Revlon RE/START Balance Anticaspa",
-      category: "Champús",
-      image: "images/products/photo-22-revlon-restart.jpg",
-      crop: { x: 38, y: 42, w: 8, h: 40 },
-      featured: false,
-      price: null,
-    },
-    {
-      id: "revlon-restart-color-shampoo",
-      name: "Champú Revlon RE/START Color",
-      category: "Champús",
-      image: "images/products/photo-22-revlon-restart.jpg",
-      crop: { x: 48, y: 42, w: 8, h: 40 },
-      featured: false,
-      price: null,
-    },
-    {
-      id: "revlon-restart-hydration-conditioner",
-      name: "Acondicionador Revlon RE/START Hydration",
-      category: "Acondicionadores",
-      image: "images/products/photo-22-revlon-restart.jpg",
-      crop: { x: 58, y: 48, w: 10, h: 34 },
-      featured: false,
-      price: null,
-    },
-    {
-      id: "revlon-restart-density-spray",
-      name: "Spray Revlon RE/START Density Anticaída",
-      category: "Tratamientos",
-      image: "images/products/photo-22-revlon-restart.jpg",
-      crop: { x: 70, y: 45, w: 8, h: 38 },
-      featured: false,
-      price: null,
-    },
-    {
-      id: "revlon-restart-curls-gel-oil",
-      name: "Gel-to-Oil Revlon RE/START Curls",
-      category: "Styling",
-      image: "images/products/photo-22-revlon-restart.jpg",
-      crop: { x: 80, y: 50, w: 10, h: 32 },
-      featured: false,
-      price: null,
-    },
-    {
-      id: "revlon-restart-color-jelly-mask",
-      name: "Mascarilla Jelly Revlon RE/START Color",
-      category: "Color",
-      image: "images/products/photo-22-revlon-restart.jpg",
-      crop: { x: 88, y: 58, w: 10, h: 24 },
-      featured: false,
-      price: null,
-    },
-
-    // photo-23 — Lakmé Vital duo (champú ya existe; solo loción vía photo-24)
-    // photo-24 — Lakmé Teknia Scalp Care Vital Lotion (1)
-    {
+{
       id: "lakme-teknia-vital-lotion",
       name: "Loción Lakmé Teknia Scalp Care Vital",
       category: "Tratamientos",
@@ -876,76 +325,7 @@ const CONFIG = {
       featured: true,
       price: null,
     },
-
-    // photo-25 — TEKNIA Hair Care (4)
-    {
-      id: "teknia-detox-gel",
-      name: "Gel Detox Teknia Scalp",
-      category: "Tratamientos",
-      image: "images/products/photo-25-teknia-hair-care.jpg",
-      crop: { x: 8, y: 28, w: 16, h: 48 },
-      featured: false,
-      price: null,
-    },
-    {
-      id: "teknia-perfect-cleanse-shampoo",
-      name: "Champú Teknia Perfect Cleanse",
-      category: "Champús",
-      image: "images/products/photo-25-teknia-hair-care.jpg",
-      crop: { x: 26, y: 18, w: 16, h: 58 },
-      featured: false,
-      price: null,
-    },
-    {
-      id: "teknia-organic-balance-shampoo",
-      name: "Champú Teknia Organic Balance 1L",
-      category: "Champús",
-      image: "images/products/photo-25-teknia-hair-care.jpg",
-      crop: { x: 46, y: 12, w: 22, h: 68 },
-      featured: false,
-      price: null,
-    },
-    {
-      id: "teknia-deep-care-conditioner",
-      name: "Acondicionador Teknia Deep Care 1L",
-      category: "Acondicionadores",
-      image: "images/products/photo-25-teknia-hair-care.jpg",
-      crop: { x: 70, y: 12, w: 22, h: 68 },
-      featured: false,
-      price: null,
-    },
-
-    // photo-26 — amika shelf (solo líneas con etiqueta legible)
-    {
-      id: "amika-velveteen-dream",
-      name: "amika Velveteen Dream",
-      category: "Champús",
-      image: "images/products/photo-26-amika-shelf.jpg",
-      crop: { x: 2, y: 8, w: 28, h: 85 },
-      featured: false,
-      price: null,
-    },
-    {
-      id: "amika-bust-your-brass",
-      name: "amika Bust Your Brass",
-      category: "Color",
-      image: "images/products/photo-26-amika-shelf.jpg",
-      crop: { x: 28, y: 5, w: 28, h: 80 },
-      featured: false,
-      price: null,
-    },
-    {
-      id: "amika-vault",
-      name: "amika Vault",
-      category: "Color",
-      image: "images/products/photo-26-amika-shelf.jpg",
-      crop: { x: 52, y: 8, w: 24, h: 75 },
-      featured: false,
-      price: null,
-    },
-
-    // photo-27 — ecosmetics nutrition Máscara Resistência (1)
-    {
+{
       id: "ecosmetics-nutrition-resistance-mask",
       name: "Mascarilla ecosmetics Nutrition Resistência",
       category: "Tratamientos",
@@ -953,7 +333,7 @@ const CONFIG = {
       crop: null,
       featured: false,
       price: null,
-    },
+    }
   ],
 
   // ---- Textos de interfaz ----
