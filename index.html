@@ -345,14 +345,19 @@
     const el = document.getElementById(id);
     if (!el) return;
     el.setAttribute("aria-label", u.whatsappLabel);
-    el.addEventListener("click", (event) => {
-      event.preventDefault();
-      openLocationPicker(el);
-    });
   });
 
-  document.getElementById("location-picker-close").addEventListener("click", closeLocationPicker);
-  document.getElementById("location-picker-backdrop").addEventListener("click", closeLocationPicker);
+  document.addEventListener("click", (event) => {
+    const trigger = event.target.closest("#nav-whatsapp, #hero-whatsapp, #contact-whatsapp");
+    if (trigger) {
+      event.preventDefault();
+      openLocationPicker(trigger);
+      return;
+    }
+    if (event.target.closest("#location-picker-close, #location-picker-backdrop")) {
+      closeLocationPicker();
+    }
+  });
   document.addEventListener("keydown", (event) => {
     if (event.key === "Escape") closeLocationPicker();
   });
