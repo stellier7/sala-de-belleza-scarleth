@@ -1090,11 +1090,12 @@ body.lightbox-open { overflow: hidden; }
 
 /* ---------- Footer ---------- */
 footer {
-  padding: 56px 0 calc(40px + env(safe-area-inset-bottom, 20px));
+  padding: 56px 0 calc(80px + env(safe-area-inset-bottom, 20px));
   border-top: 1px solid var(--line);
   color: var(--ink-faint);
   font-size: 13.5px;
 }
+.footer-inner { width: 100%; }
 .footer-row {
   display: flex;
   flex-wrap: wrap;
@@ -1109,6 +1110,21 @@ footer .fbrand {
 }
 footer a { color: var(--ink-soft); transition: color .25s var(--ease); }
 footer a:hover { color: var(--ink); }
+.foot-credit {
+  margin-top: 20px;
+  padding-bottom: 12px;
+  font-size: 11px;
+  color: var(--ink-faint);
+  text-align: center;
+  width: 100%;
+}
+.foot-credit a {
+  color: var(--ink-soft);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color .25s var(--ease);
+}
+.foot-credit a:hover { color: var(--ink); }
 
 /* ---------- Locations + WhatsApp picker ---------- */
 .contact-locations {
