@@ -12,9 +12,9 @@ const CONFIG = {
   brandNameShort: "Scarleth",
   tagline: "Belleza completa",
   heroEyebrow: "Comayagua",
-  heroHeadlineLines: ["Tu momento", "de brillar"],
+  heroHeadlineLines: ["Scarleth", "Sala de Belleza"],
   heroSub:
-    "Cabello, uñas, cejas y más — con atención cercana en dos sucursales. Reserva por WhatsApp y elige Scarleth #1 o Scarleth #2.",
+    "Porque un cabello saludable comienza con los productos adecuados.",
 
   // ---- Contacto / Reservas (2 sucursales) ----
   whatsappDefaultMessage: "¡Hola! Me gustaría reservar una cita en Scarleth.",
