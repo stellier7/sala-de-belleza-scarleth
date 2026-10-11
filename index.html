@@ -144,16 +144,13 @@
 
 <section id="visita">
   <div class="wrap">
-    <div class="contact-grid">
-      <div>
-        <div class="kicker" data-reveal id="visit-eyebrow"></div>
-        <h2 class="contact-title" data-reveal style="--delay:.05s" id="visit-title"></h2>
-        <div class="quote-block" data-reveal style="--delay:.1s" id="quote-block">
-          <p id="quote-text"></p>
-          <div class="who" id="quote-who"></div>
-        </div>
-      </div>
-      <div class="contact-card" data-reveal style="--delay:.1s">
+    <div class="section-head visit-head">
+      <div class="kicker" data-reveal id="visit-eyebrow"></div>
+      <h2 class="contact-title" data-reveal style="--delay:.05s" id="visit-title"></h2>
+    </div>
+    <div class="maps-grid" id="maps-grid" data-reveal style="--delay:.1s"></div>
+    <div class="contact-grid visit-contact">
+      <div class="contact-card" data-reveal style="--delay:.12s">
         <div id="contact-locations" class="contact-locations"></div>
         <div class="contact-row">
           <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></div>
@@ -423,14 +420,6 @@
     portrait.src = c.visitImage;
   }
 
-  const quoteBlock = document.getElementById("quote-block");
-  if (c.heroSub) {
-    document.getElementById("quote-text").textContent = `“${c.heroSub}”`;
-    document.getElementById("quote-who").textContent = c.brandName;
-  } else {
-    quoteBlock.hidden = true;
-  }
-
   document.getElementById("services-eyebrow").textContent = u.servicesEyebrow;
   document.getElementById("services-title").textContent = u.servicesTitle;
   document.getElementById("gallery-eyebrow").textContent = u.galleryEyebrow;
@@ -444,6 +433,29 @@
   document.getElementById("contact-hours").innerHTML = (c.hours || []).map((hour) => `
     <div class="hours-line"><span>${esc(hour.day)}</span><span>${esc(hour.time)}</span></div>
   `).join("");
+
+  const mapsGrid = document.getElementById("maps-grid");
+  if (mapsGrid) {
+    mapsGrid.innerHTML = locations.map((location) => `
+      <article class="map-card">
+        <div class="map-card-head">
+          <h3>${esc(location.name)}</h3>
+          ${location.mapsUrl ? `<a class="maps-link" href="${esc(location.mapsUrl)}" target="_blank" rel="noopener">${esc(u.mapsLabel)}</a>` : ""}
+        </div>
+        <div class="map-frame">
+          ${location.mapsEmbedUrl ? `
+            <iframe
+              title="Mapa de ${esc(location.name)}"
+              src="${esc(location.mapsEmbedUrl)}"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen
+            ></iframe>
+          ` : `<div class="map-fallback">${esc(location.address)}</div>`}
+        </div>
+      </article>
+    `).join("");
+  }
 
   const locationsEl = document.getElementById("contact-locations");
   if (locationsEl) {

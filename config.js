@@ -26,6 +26,9 @@ const CONFIG = {
       phoneDisplay: "+504 9838-6397",
       whatsappNumber: "50498386397",
       mapsUrl: "https://maps.app.goo.gl/DjYNgpmWiXEizpyY6",
+      // Scarleth Salón — 14.4565158, -87.6399456
+      mapsEmbedUrl:
+        "https://www.google.com/maps?q=14.4565158,-87.6399456&z=17&hl=es&output=embed",
     },
     {
       id: "scarleth-2",
@@ -34,7 +37,10 @@ const CONFIG = {
       phoneDisplay: "+504 9875-0500",
       whatsappNumber: "50498750500",
       mapsUrl:
-        "https://www.google.com/maps/place/F948%2BJCV+Inversiones+American+Fashion,+Comayagua/@14.456672,-87.6343313,20z",
+        "https://www.google.com/maps/place/F948%2BJCV+Inversiones+American+Fashion,+Comayagua/@14.4566119,-87.6339733,17z",
+      // Inversiones American Fashion area — 14.4566119, -87.6339733
+      mapsEmbedUrl:
+        "https://www.google.com/maps?q=14.4566119,-87.6339733&z=17&hl=es&output=embed",
     },
   ],
   hours: [
